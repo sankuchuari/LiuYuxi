@@ -14,8 +14,12 @@ Liu-Yuxi-Project/
 ├── docs/                   # 学术讲评与人物生平资料
 │   ├── biography.md        # 刘禹锡全方位生平与思想深度解析
 │   └── commentary.md       # 经典诗文讲评与哲学思想（天论等）
-└── script/                 # 舞台剧剧本
-    └── play-script.md      # 8分钟高燃微话剧《前度刘郎》剧本
+├── script/                 # 舞台剧剧本
+│   └── play-script.md      # 8分钟高燃微话剧《前度刘郎》剧本
+├── speech/                 # 课堂展示与演讲资源
+│   └── lecture-speech.md   # 《唐代“诗豪”刘禹锡：在逆境中突围的时代坐标》演讲稿
+└── assets/                 # 演示与演出辅助资源
+    └── presentation.pptx   # 配套演讲 PPT 演示文稿（视觉幻灯片）
 
 ```
 
