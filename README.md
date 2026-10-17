@@ -14,11 +14,9 @@ Liu-Yuxi-Project/
 ├── docs/                   # 学术讲评与人物生平资料
 │   ├── biography.md        # 刘禹锡全方位生平与思想深度解析
 │   └── commentary.md       # 经典诗文讲评与哲学思想（天论等）
-├── script/                 # 舞台剧剧本
-│   └── play-script.md      # 8分钟高燃微话剧《前度刘郎》剧本
-└── assets/                 # 演出辅助资源（可选）
-    ├── music-cue.md        # 音乐与音效配合建议
-    └── stage-direction.md  # 舞台调度与道具参考
+└── script/                 # 舞台剧剧本
+    └── play-script.md      # 8分钟高燃微话剧《前度刘郎》剧本
+
 ```
 
 ---
