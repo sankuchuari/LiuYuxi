@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前度刘郎 · 刘禹锡主题数字人文空间</title>
+    <!-- 引入 Tailwind CSS 构建现代排版，配合自定义古典风格 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#1e293b',
+                        paper: '#fcfbfa',
+                        cardbg: '#f4f1ea',
+                        accent: '#993333', // 朱砂红
+                        subtext: '#64748b'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        calligraphy: ['"Ma Shan Zheng"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fcfbfa;
+            color: #1e293b;
+            font-family: 'Noto Serif SC', serif;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+        }
+        .seal {
+            border: 2px solid #993333;
+            color: #993333;
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen flex flex-col justify-between selection:bg-accent selection:text-white">
+
+    <!-- 顶栏导航 -->
+    <header class="w-full border-b border-stone-300 bg-paper/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded flex items-center justify-center seal text-xl font-bold shadow-sm">
+                    诗豪
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider">前度刘郎</h1>
+                    <p class="text-xs text-subtext tracking-widest">刘禹锡主题学习与舞台演绎空间</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#biography" class="hover:text-accent transition">生平轨迹</a>
+                <a href="#poetry" class="hover:text-accent transition">诗文金句</a>
+                <a href="#philosophy" class="hover:text-accent transition">天论哲学</a>
+                <a href="#drama" class="hover:text-accent transition">剧本演绎</a>
+                <a href="#speech" class="hover:text-accent transition">演讲讲评</a>
+            </nav>
+            <div>
+                <a href="https://github.com/sankuchuari/LiuYuxi" target="_blank" class="inline-flex items-center px-4 py-2 text-xs font-semibold rounded border border-stone-400 hover:bg-ink hover:text-white transition shadow-sm">
+                    GitHub 仓库
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主视觉 Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 text-xs tracking-widest text-accent border border-accent/30 rounded-full bg-accent/5">
+            唐代文学巨匠 · 思想家 · 不屈的时代坐标
+        </div>
+        <h2 class="text-5xl md:text-7xl font-calligraphy mb-6 tracking-wide text-ink">
+            沉舟侧畔千帆过，病树前头万木春
+        </h2>
+        <p class="text-lg md:text-xl text-subtext max-w-2xl mx-auto leading-relaxed font-light">
+            被贬二十三载，玄都观两度回眸。他将苦难淬炼成生命的铠甲，以睥睨一切的傲骨与哲学巨作，在历史长河中高歌向天。
+        </p>
+        <div class="mt-10 flex justify-center gap-4">
+            <a href="#drama" class="px-6 py-3 bg-accent text-white rounded text-sm font-medium shadow-md hover:bg-accent/90 transition">
+                探索舞台剧本
+            </a>
+            <a href="#biography" class="px-6 py-3 border border-stone-400 text-ink rounded text-sm font-medium hover:bg-stone-100 transition">
+                深度生平解析
+            </a>
+        </div>
+    </section>
+
+    <!-- 主体内容区 -->
+    <main class="max-w-6xl mx-auto px-6 space-y-24 pb-24">
+
+        <!-- 1. 生平脉络板块 -->
+        <section id="biography" class="scroll-mt-28">
+            <div class="border-l-4 border-accent pl-4 mb-8">
+                <h3 class="text-2xl font-bold">生平脉络：百折不挠的“逐客”</h3>
+                <p class="text-sm text-subtext">从少年得志到二十三载贬谪，至死眼里都有光的“不老战神”</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-cardbg p-6 rounded-lg border border-stone-200 shadow-sm">
+                    <span class="text-xs font-bold text-accent">01 / 意气风发</span>
+                    <h4 class="text-lg font-bold mt-2 mb-3">永贞革新与登科</h4>
+                    <p class="text-sm text-subtext leading-relaxed">
+                        少负大志，与挚友柳宗元同榜及第。顺宗时投身永贞革新，主张打击宦官特权、革除弊政，拉开政治生涯的序幕。
+                    </p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-lg border border-stone-200 shadow-sm">
+                    <span class="text-xs font-bold text-accent">02 / 孤傲不屈</span>
+                    <h4 class="text-lg font-bold mt-2 mb-3">二十三载流放</h4>
+                    <p class="text-sm text-subtext leading-relaxed">
+                        因革新失败远贬朗州、连州等地。两游玄都观，以“玄都观里桃千树，尽是刘郎去后栽”与“前度刘郎今又来”直面权贵。
+                    </p>
+                </div>
+                <div class="bg-cardbg p-6 rounded-lg border border-stone-200 shadow-sm">
+                    <span class="text-xs font-bold text-accent">03 / 晚年唱和</span>
+                    <h4 class="text-lg font-bold mt-2 mb-3">诗坛诗豪与豁达</h4>
+                    <p class="text-sm text-subtext leading-relaxed">
+                        晚年与白居易结为挚友（刘白），诗酒唱和。古稀之年仍高歌“晴空一鹤排云上”，展现出跨越千年的生命韧性。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 经典诗文金句 -->
+        <section id="poetry" class="scroll-mt-28">
+            <div class="border-l-4 border-accent pl-4 mb-8">
+                <h3 class="text-2xl font-bold">经典诗文：刚健博大、立意高远</h3>
+                <p class="text-sm text-subtext">打破传统悲秋基调，将人生历练熔铸为万古流芳的宏大意象</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-8 bg-white border border-stone-200 rounded-lg shadow-sm relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-stone-200 font-calligraphy text-6xl select-none">秋词</span>
+                    <h4 class="font-bold text-lg mb-2">《秋词·其一》</h4>
+                    <p class="text-accent italic mb-4">“自古逢秋悲寂寥，我言秋日胜春朝。晴空一鹤排云上，便引诗情到碧霄。”</p>
+                    <p class="text-xs text-subtext">彻底颠覆文人悲秋的衰飒情调，化为一飞冲天的磅礴豪情。</p>
+                </div>
+                <div class="p-8 bg-white border border-stone-200 rounded-lg shadow-sm relative overflow-hidden">
+                    <span class="absolute top-4 right-4 text-stone-200 font-calligraphy text-6xl select-none">陋室</span>
+                    <h4 class="font-bold text-lg mb-2">《陋室铭》</h4>
+                    <p class="text-accent italic mb-4">“山不在高，有仙则名；水不在深，有龙则灵。斯是陋室，惟吾德馨。”</p>
+                    <p class="text-xs text-subtext">以精悍短小的铭文，昭示安贫乐道、不流于俗的独立人格。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 哲学思想板块 -->
+        <section id="philosophy" class="scroll-mt-28">
+            <div class="border-l-4 border-accent pl-4 mb-8">
+                <h3 class="text-2xl font-bold">哲学思想：破除迷信的《天论》</h3>
+                <p class="text-sm text-subtext">倡导“天人交相胜”，在封建时代闪烁着朴素的唯物主义光芒</p>
+            </div>
+            <div class="bg-cardbg p-8 rounded-lg border border-stone-200">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">“天与人交相胜”</h4>
+                        <p class="text-sm text-subtext leading-relaxed mb-4">
+                            刘禹锡在哲学著作《天论》中明确指出：大自然（天）有其不以人的意志为转移的客观规律，而人类（人）同样具备改造和利用自然的能力。
+                        </p>
+                        <p class="text-sm text-subtext leading-relaxed">
+                            他彻底驳斥了当时盛行的“天能降灾福以赏罚人事”的天命神学迷信，把人类的主观能动性与客观规律完美结合。
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded border border-stone-300 text-center">
+                        <span class="text-xs text-accent uppercase tracking-widest font-bold">核心哲学观点</span>
+                        <div class="text-2xl font-calligraphy my-4">天克者制，人定胜天</div>
+                        <p class="text-xs text-stone-500">唯物辩证与宏大历史视野的先驱</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 舞台剧演绎板块 -->
+        <section id="drama" class="scroll-mt-28">
+            <div class="border-l-4 border-accent pl-4 mb-8">
+                <h3 class="text-2xl font-bold">剧情演绎：8分钟高燃微话剧《前度刘郎》</h3>
+                <p class="text-sm text-subtext">专为大学国文课堂展示打造的多幕剧本，三幕高潮串联不屈一生</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg border border-stone-200 shadow-sm space-y-6">
+                <div class="grid md:grid-cols-3 gap-4 border-b border-stone-200 pb-6">
+                    <div>
+                        <span class="text-xs font-bold text-accent">第一幕</span>
+                        <h5 class="font-bold text-base mt-1">风华正茂与永贞革新</h5>
+                        <p class="text-xs text-subtext mt-1">青年意气，变法百日，惨遭贬谪却绝不低头。</p>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-accent">第二幕</span>
+                        <h5 class="font-bold text-base mt-1">玄都观里，傲骨长存</h5>
+                        <p class="text-xs text-subtext mt-1">“前度刘郎今又来”，对权贵与流俗的尖锐讽刺。</p>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-accent">第三幕</span>
+                        <h5 class="font-bold text-base mt-1">晴空一鹤，千帆侧畔</h5>
+                        <p class="text-xs text-subtext mt-1">晚年与白居易唱和，生命力拉满的旷世绝唱。</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-between items-center pt-2">
+                    <span class="text-sm text-subtext">💡 建议表演基调：节奏明快、字字砸地、拒绝悲情，展现“不老战神”眼里的光。</span>
+                    <a href="https://github.com/sankuchuari/LiuYuxi/blob/main/script/play-script.md" target="_blank" class="px-4 py-2 bg-ink text-white rounded text-xs font-medium hover:bg-accent transition">
+                        查看完整剧本源码
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 演讲讲评与资源 -->
+        <section id="speech" class="scroll-mt-28">
+            <div class="border-l-4 border-accent pl-4 mb-8">
+                <h3 class="text-2xl font-bold">学术讲评与演示资料</h3>
+                <p class="text-sm text-subtext">配套演讲稿、课件及开源仓库资源索引</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-cardbg p-6 rounded-lg border border-stone-200">
+                    <h4 class="font-bold text-base mb-2">🎤 课堂演讲稿（10-15分钟）</h4>
+                    <p class="text-sm text-subtext mb-4">主题：《唐代“诗豪”刘禹锡：在逆境中突围的时代坐标》，结构清晰、口语流畅、情感激越。</p>
+                    <a href="https://github.com/sankuchuari/LiuYuxi/blob/main/docs/speech.md" target="_blank" class="text-xs font-bold text-accent hover:underline">阅读演讲稿 →</a>
+                </div>
+                <div class="bg-cardbg p-6 rounded-lg border border-stone-200">
+                    <h4 class="font-bold text-base mb-2">📁 完整知识图谱与文件仓库</h4>
+                    <p class="text-sm text-subtext mb-4">包含详细生平、诗文评析、天论深度解析以及演示 PPT 文件，欢迎 Fork 与二次开发。</p>
+                    <a href="https://github.com/sankuchuari/LiuYuxi" target="_blank" class="text-xs font-bold text-accent hover:underline">访问 GitHub 仓库 →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="border-t border-stone-300 bg-paper py-8 text-center text-xs text-subtext">
+        <p>© 2026 刘禹锡主题数字人文项目 · 开放开源协议 (CC BY-NC 4.0)</p>
+        <p class="mt-1">Designed with traditional aesthetics & modern minimalism.</p>
+    </footer>
+
+</body>
+</html>
